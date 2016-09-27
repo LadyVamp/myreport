@@ -77,30 +77,6 @@ class Cart
     }
 
     /**
-     * Получаем общую стоимость переданных товаров
-     * @param array $products <p>Массив с информацией о товарах</p>
-     * @return integer <p>Общая стоимость</p>
-     */
-    public static function getTotalPrice($products)
-    {
-        // Получаем массив с идентификаторами и количеством товаров в корзине
-        $productsInCart = self::getProducts();
-
-        // Подсчитываем общую стоимость
-        $total = 0;
-        if ($productsInCart) {
-            // Если в корзине не пусто
-            // Проходим по переданному в метод массиву товаров
-            foreach ($products as $item) {
-                // Находим общую стоимость: цена товара * количество товара
-                $total += $item['price'] * $productsInCart[$item['id']];
-            }
-        }
-
-        return $total;
-    }
-
-    /**
      * Очищает корзину
      */
     public static function clear()

@@ -10,7 +10,7 @@
                     <h2 class="title text-center">Страницы</h2>
                     <br/>
 
-                    <?php foreach ($newProducts as $product): ?>
+                    <?php foreach ($allProducts as $product): ?>
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
