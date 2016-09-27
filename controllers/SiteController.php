@@ -15,9 +15,6 @@ class SiteController
        // Список новых товаров
         $newProducts = Product::getNewProducts(6);
 
-        // // Список товаров для слайдера
-        // $sliderProducts = Product::getHitProducts();
-
         // Подключаем вид
         require_once(ROOT . '/views/site/index.php');
         return true;

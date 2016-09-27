@@ -34,7 +34,7 @@ class CartController
     }
     
     /**
-     * Action для добавления товара в корзину синхронным запросом
+     * Action для удаления товара из корзины синхронным запросом
      * @param integer $id <p>id товара</p>
      */
     public function actionDelete($id)
@@ -51,11 +51,6 @@ class CartController
      */
     public function actionIndex()
     {
-        // Список категорий для левого меню
-        $categories = Category::getCategoriesList();
-        // Список брендов для левого меню
-        $brands = Brand::getBrandsList();
-
         // Получим идентификаторы и количество товаров в корзине
         $productsInCart = Cart::getProducts();
 
@@ -66,9 +61,6 @@ class CartController
 
             // Получаем массив с полной информацией о необходимых товарах
             $products = Product::getProdustsByIds($productsIds);
-
-            // // Получаем общую стоимость товаров
-            // $totalPrice = Cart::getTotalPrice($products);
         }
 
         // Подключаем вид
