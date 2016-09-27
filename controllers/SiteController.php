@@ -12,9 +12,6 @@ class SiteController
     public function actionIndex()
     {
 
-       // // Список новых товаров
-       //  $newProducts = Product::getNewProducts(6);
-
         // Список новых товаров
         $allProducts = Product::getAllProducts(6);
 

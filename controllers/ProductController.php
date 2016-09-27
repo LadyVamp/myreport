@@ -14,7 +14,7 @@ class ProductController
     public function actionView($productId)
     {
 
-        // Получаем информацию о товаре
+        // Получаем информацию о товаре !Заголовок товара в корзине!
         $product = Product::getProductById($productId);
 
         // Подключаем вид

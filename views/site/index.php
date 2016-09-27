@@ -6,7 +6,7 @@
         <div class="row">
 
             <div class="col-sm-12 padding-right">
-                <div class="features_items"><!--new_items-->
+                <div class="features_items">
                     <h2 class="title text-center">Страницы</h2>
                     <br/>
 
@@ -27,10 +27,7 @@
                             </div>
                         </div>
                     <?php endforeach; ?>
-
-
-                </div><!--new_items-->
-
+                </div>
                 
             </div>
 
