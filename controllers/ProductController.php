@@ -13,11 +13,6 @@ class ProductController
      */
     public function actionView($productId)
     {
-        // // Список категорий для левого меню
-        // $categories = Category::getCategoriesList();
-        
-        // // Список брендов для левого меню
-        // $brands = Brand::getBrandsList();
 
         // Получаем информацию о товаре
         $product = Product::getProductById($productId);
