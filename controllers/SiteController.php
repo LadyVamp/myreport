@@ -12,7 +12,7 @@ class SiteController
     public function actionIndex()
     {
 
-        // Список новых товаров
+        // Список всех товаров
         $allProducts = Product::getAllProducts(6);
 
         // Подключаем вид
